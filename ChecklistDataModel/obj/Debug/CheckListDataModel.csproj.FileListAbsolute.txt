@@ -1,0 +1,12 @@
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListDataModel\bin\Debug\CheckListDataModel.dll.config
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListDataModel\bin\Debug\CheckListDataModel.dll
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListDataModel\bin\Debug\CheckListDataModel.pdb
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListDataModel\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListDataModel\obj\Debug\CheckListDataModel.dll
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListDataModel\obj\Debug\CheckListDataModel.pdb
+C:\src\checklist\CheckListDataModel\bin\Debug\CheckListDataModel.dll.config
+C:\src\checklist\CheckListDataModel\bin\Debug\CheckListDataModel.dll
+C:\src\checklist\CheckListDataModel\bin\Debug\CheckListDataModel.pdb
+C:\src\checklist\CheckListDataModel\obj\Debug\ResolveAssemblyReference.cache
+C:\src\checklist\CheckListDataModel\obj\Debug\CheckListDataModel.dll
+C:\src\checklist\CheckListDataModel\obj\Debug\CheckListDataModel.pdb

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="Checklist" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation">
+  <EntityContainer Name="ChecklistContainer" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="CheckListTemplates" EntityType="Checklist.CheckListTemplate" />
+  </EntityContainer>
+  <EntityType Name="CheckListTemplate" Abstract="true">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Type="Int32" Name="Id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="Description" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" cg:SetterAccess="Private" />
+    <Property Type="DateTime" Name="LastModifiedDate" Nullable="false" cg:SetterAccess="Private" />
+  </EntityType>
+  <ComplexType Name="ComplexType1" />
+  <EntityType Name="CheckList" BaseType="Checklist.CheckListTemplate" />
+  <EntityType Name="CheckListItem" BaseType="Checklist.CheckListTemplate">
+    <Property Type="String" Name="Details" Nullable="false" />
+  </EntityType>
+</Schema>

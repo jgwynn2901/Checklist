@@ -1,0 +1,46 @@
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\CheckListUnitTests.dll.config
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\CheckListUnitTests.dll
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\CheckListUnitTests.pdb
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\CheckListDataModel.dll
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\FnsUtility.dll
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\nunit.framework.dll
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\FnsInterfaces.dll
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\FTP.dll
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\FnsComposite.dll
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\DbClassLibrary.dll
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\DbLinq.dll
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\DbLinq.Oracle.dll
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\CheckListDataModel.pdb
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\FnsUtility.pdb
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\nunit.framework.xml
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\FnsInterfaces.pdb
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\FnsComposite.pdb
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\DbClassLibrary.pdb
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\obj\Debug\CheckListUnitTests.dll
+C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckListUnitTests\obj\Debug\CheckListUnitTests.pdb
+C:\src\checklist\CheckListUnitTests\bin\Debug\CheckListUnitTests.dll.config
+C:\src\checklist\CheckListUnitTests\bin\Debug\CheckListUnitTests.dll
+C:\src\checklist\CheckListUnitTests\bin\Debug\CheckListUnitTests.pdb
+C:\src\checklist\CheckListUnitTests\bin\Debug\CheckListDataModel.dll
+C:\src\checklist\CheckListUnitTests\bin\Debug\FnsUtility.dll
+C:\src\checklist\CheckListUnitTests\bin\Debug\nunit.framework.dll
+C:\src\checklist\CheckListUnitTests\bin\Debug\FnsInterfaces.dll
+C:\src\checklist\CheckListUnitTests\bin\Debug\FTP.dll
+C:\src\checklist\CheckListUnitTests\bin\Debug\FnsComposite.dll
+C:\src\checklist\CheckListUnitTests\bin\Debug\DbClassLibrary.dll
+C:\src\checklist\CheckListUnitTests\bin\Debug\Newtonsoft.Json.dll
+C:\src\checklist\CheckListUnitTests\bin\Debug\DbLinq.dll
+C:\src\checklist\CheckListUnitTests\bin\Debug\DbLinq.Oracle.dll
+C:\src\checklist\CheckListUnitTests\bin\Debug\CheckListDataModel.pdb
+C:\src\checklist\CheckListUnitTests\bin\Debug\FnsUtility.pdb
+C:\src\checklist\CheckListUnitTests\bin\Debug\nunit.framework.xml
+C:\src\checklist\CheckListUnitTests\bin\Debug\FnsInterfaces.pdb
+C:\src\checklist\CheckListUnitTests\bin\Debug\FnsComposite.pdb
+C:\src\checklist\CheckListUnitTests\bin\Debug\DbClassLibrary.pdb
+C:\src\checklist\CheckListUnitTests\bin\Debug\Newtonsoft.Json.pdb
+C:\src\checklist\CheckListUnitTests\obj\Debug\ResolveAssemblyReference.cache
+C:\src\checklist\CheckListUnitTests\obj\Debug\CheckListUnitTests.dll
+C:\src\checklist\CheckListUnitTests\obj\Debug\CheckListUnitTests.pdb

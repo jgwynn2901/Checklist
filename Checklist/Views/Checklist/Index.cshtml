@@ -1,0 +1,18 @@
+﻿@model IEnumerable<CheckListDataModel.CheckList>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<div data-role="header" id="hdrCategories" data-nobackbtn="true">
+<h1>Lists</h1>
+<a id="buttonNewCategory" data-icon="plus" class="ui-btn-right" href="" data-role="button" data-inline="true">Checklist</a>
+</div>
+<div data-role="content" id="indexContent">
+<ul data-role="listview" data-inset="true" data-theme="d" >
+    <li data-role="list-divider">Index</li>
+    @foreach (var item in Model) {
+    <li>@Html.ActionLink(@item.Name, "Select", new { name = item.Name })</li>  
+}
+</ul>
+</div>
