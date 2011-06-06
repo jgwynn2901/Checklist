@@ -45,7 +45,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CheckListBase.cs" />
     <Compile Include="CheckListItem.cs" />
     <Compile Include="CheckList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

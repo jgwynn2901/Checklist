@@ -33,7 +33,7 @@ namespace CheckList.Models
             MongoServer server = MongoServer.Create(); // connect to localhost
             MongoDatabase checklistDb = server.GetDatabase("checklists");
             MongoCollection<CheckListDataModel.CheckList> lists = checklistDb.GetCollection<CheckListDataModel.CheckList>("lists");
-            var query = Query.EQ("_id", "UnitTest");
+            var query = Query.EQ("_id", name);
             CheckListDataModel.CheckList checklist = lists.FindOne(query);
             return checklist;
         }

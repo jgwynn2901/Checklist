@@ -33,13 +33,13 @@ namespace CheckListDataModel
                 Items.Remove(node);
         }
 
-        public CheckListItem AddItem(string name, string data)
+        public CheckListItem AddItem(string name, string description)
         {
             var results = new CheckListItem
             {
                 Name = name,
                 Type = "Item",
-                Data = data
+                Description = description
             };
 
             Items.Add(results);

@@ -5,3 +5,10 @@ C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckList\obj\Debug\CheckL
 C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckList\obj\Debug\CheckList.pdb
 C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckList\bin\CheckListDataModel.dll
 C:\Users\gwynnj\documents\visual studio 2010\Projects\CheckList\bin\CheckListDataModel.pdb
+C:\src\checklist\CheckList\bin\CheckList.dll
+C:\src\checklist\CheckList\bin\CheckList.pdb
+C:\src\checklist\CheckList\bin\CheckListDataModel.dll
+C:\src\checklist\CheckList\bin\CheckListDataModel.pdb
+C:\src\checklist\CheckList\obj\Debug\ResolveAssemblyReference.cache
+C:\src\checklist\CheckList\obj\Debug\CheckList.dll
+C:\src\checklist\CheckList\obj\Debug\CheckList.pdb

@@ -20,9 +20,11 @@ namespace CheckList.Controllers
         //
         // GET: /Checklist/Details/5
 
-        public ActionResult Details(int id)
+        public ActionResult Details(string name, int? index )
         {
-            return View();
+            if(index.HasValue)
+                return View(ChecklistRepository.SelectByName(name).Items[index??0]);
+            return RedirectToAction("Index");
         }
 
         public ActionResult Select(string name)
@@ -34,7 +36,7 @@ namespace CheckList.Controllers
 
         public ActionResult Create()
         {
-            return View();
+            return View(new CheckListDataModel.CheckListItem());
         } 
 
         //
