@@ -1,17 +1,17 @@
 ﻿@model CheckListDataModel.CheckList
 
 @{
-	ViewBag.Title = "Select";
+    ViewBag.Title = Model.Name;
 }
 <div data-role="header" id="hdrCategories">
 <h1>@Model.Name</h1>
-<a id="buttonNewCategory" data-icon="plus" class="ui-btn-right" href="/Checklist/Create" data-role="button" data-inline="true">Task</a>
+<a id="buttonNewCategory" data-icon="plus" class="ui-btn-right" href="/Checklist/CreateItem/@Model.Name" data-role="button" data-inline="true">Task</a>
 </div>
 <div data-role="content" id="indexContent">
 <ul data-role="listview" data-inset="true">
-	<li data-role="list-divider">Tasks</li>
-	@for (int i = 0; i < Model.Items.Count; i++ )  {
-	    <li><a href="/Checklist/Details/@Model.Name?index=@i" id="@Model.Items[i].Name">@Model.Items[i].Name</a></li>  
+    <li data-role="list-divider">Tasks</li>
+    @for (int i = 0; i < Model.Items.Count; i++ )  {
+        <li><a href="/Checklist/Details/@Model.Name?index=@i" id="@Model.Items[i].Name">@Model.Items[i].Name</a></li>  
     }
 </ul>
 </div>

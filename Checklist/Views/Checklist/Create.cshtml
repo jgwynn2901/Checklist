@@ -1,0 +1,53 @@
+﻿@model CheckListDataModel.CheckListItem
+@{
+    ViewBag.Title = "Create";
+}
+<div data-role="header" id="hdrCreate" name="hdrCreate">
+    <h1>
+        New CheckList</h1>
+</div>
+<div data-role="content" id="formContent">
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true)
+        <fieldset>
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Name)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Name)
+                @Html.ValidationMessageFor(model => model.Name)
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(model => model.Description)
+            </div>
+            <div class="editor-field">
+                @Html.EditorFor(model => model.Description)
+                @Html.ValidationMessageFor(model => model.Description)
+            </div>
+            @{ if (ViewBag.Item)
+               {
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.Type)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.Type)
+                    @Html.ValidationMessageFor(model => model.Type)
+                </div>
+
+                <div class="editor-label">
+                    @Html.LabelFor(model => model.Data)
+                </div>
+                <div class="editor-field">
+                    @Html.EditorFor(model => model.Data)
+                    @Html.ValidationMessageFor(model => model.Data)
+                </div>
+               } 
+            }
+        </fieldset>
+        <div id="submitDiv" data-role="fieldcontain">
+            <input type="submit" data-role="button" value="Create" />
+        </div>
+    }
+</div>

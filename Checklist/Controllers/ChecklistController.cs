@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using CheckList.Models;
 
 namespace CheckList.Controllers
@@ -36,19 +32,48 @@ namespace CheckList.Controllers
 
         public ActionResult Create()
         {
+            ViewBag.Item = false;
             return View(new CheckListDataModel.CheckListItem());
-        } 
+        }
+
+        public ActionResult CreateItem(string id)
+        {
+            ViewBag.Item = !string.IsNullOrEmpty(id);
+            ViewBag.Parent = id;
+            return View("Create", new CheckListDataModel.CheckListItem());
+        }
 
         //
         // POST: /Checklist/Create
 
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(CheckListDataModel.CheckListItem list)
+        {
+            try
+            {
+                if(string.IsNullOrEmpty(ViewBag.Parent))
+                {
+                    ChecklistRepository.Insert(list);
+                }
+                else
+                {
+                    ChecklistRepository.Update(ViewBag.Parent, list);
+                }
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
+
+        [HttpPost]
+        public ActionResult CreateItem(string id, CheckListDataModel.CheckListItem list)
         {
             try
             {
                 // TODO: Add insert logic here
-
+                ChecklistRepository.Update(id, list);
                 return RedirectToAction("Index");
             }
             catch
@@ -69,12 +94,12 @@ namespace CheckList.Controllers
         // POST: /Checklist/Edit/5
 
         [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
+        public ActionResult Details(string name, CheckListDataModel.CheckListItem item)
         {
             try
             {
                 // TODO: Add update logic here
- 
+                ChecklistRepository.Update(name, item);
                 return RedirectToAction("Index");
             }
             catch
@@ -95,7 +120,7 @@ namespace CheckList.Controllers
         // POST: /Checklist/Delete/5
 
         [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult Delete(string name)
         {
             try
             {

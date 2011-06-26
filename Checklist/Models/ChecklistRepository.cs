@@ -30,16 +30,24 @@ namespace CheckList.Models
 
         public static CheckListDataModel.CheckList SelectByName(string name)
         {
-            MongoServer server = MongoServer.Create(); // connect to localhost
-            MongoDatabase checklistDb = server.GetDatabase("checklists");
-            MongoCollection<CheckListDataModel.CheckList> lists = checklistDb.GetCollection<CheckListDataModel.CheckList>("lists");
+            var server = MongoServer.Create(); // connect to localhost
+            var checklistDb = server.GetDatabase("checklists");
+            var lists = checklistDb.GetCollection<CheckListDataModel.CheckList>("lists");
             var query = Query.EQ("_id", name);
-            CheckListDataModel.CheckList checklist = lists.FindOne(query);
+            var checklist = lists.FindOne(query);
             return checklist;
         }
 
-        public static bool Update(CheckListDataModel.CheckList list)
+        public static bool Update(string name, CheckListDataModel.CheckListItem list)
         {
+            var server = MongoServer.Create(); // connect to localhost
+            var checklistDb = server.GetDatabase("checklists");
+            var lists = checklistDb.GetCollection<CheckListDataModel.CheckList>("lists");
+            var query = Query.EQ("_id", name);
+
+            var update = MongoDB.Driver.Builders.Update.AddToSetWrapped("Items", list);
+            var result = lists.Update(query, update, UpdateFlags.Multi, SafeMode.True);
+
             return true;
         }
 
