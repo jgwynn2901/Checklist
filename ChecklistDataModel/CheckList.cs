@@ -35,15 +35,34 @@ namespace CheckListDataModel
 
         public CheckListItem AddItem(string name, string description)
         {
+            return AddItem(name, description, string.Empty);
+        }
+
+        public CheckListItem AddItem(string name, string description, string data)
+        {
             var results = new CheckListItem
             {
                 Name = name,
                 Type = "Item",
-                Description = description
+                Description = description,
+                Data = data,
+                Ordinal = Items.Count
             };
 
             Items.Add(results);
             return results;
+        }
+
+        public CheckListItem UpdateItem(CheckListItem item)
+        {
+            var results = Items.Find(a => a.Name==item.Name);
+            if (results != default(CheckListItem))
+            {
+                results.Description = item.Description;
+                results.Data = item.Data;
+                return results;
+            }
+            return AddItem(item.Name, item.Description, item.Data);
         }
     }
 }
