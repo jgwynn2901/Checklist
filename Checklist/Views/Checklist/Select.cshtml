@@ -11,7 +11,9 @@
 <ul data-role="listview" data-inset="true">
     <li data-role="list-divider">Tasks</li>
     @for (int i = 0; i < Model.Items.Count; i++ )  {
-        <li><a href="/Checklist/Details/@Model.Name?index=@i" id="@Model.Items[i].Name">@Model.Items[i].Name</a></li>  
+       <li> 
+        @Html.ActionLink(@Model.Items[i].Name, "Edit", new { id = @Model.Name, index=i  })
+       </li> 
     }
 </ul>
 </div>

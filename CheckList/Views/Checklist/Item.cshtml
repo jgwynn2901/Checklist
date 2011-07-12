@@ -1,0 +1,39 @@
+﻿@model CheckListDataModel.CheckListItem
+
+@{
+	ViewBag.Title = @Model.Name;
+}
+
+<div data-role="header" id="hdrCategories">
+	<h1>@Model.Name</h1>
+</div>
+
+<div data-role="content" id="contentDetails" name="contentDetails">
+<fieldset>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+    <div class="display-label">Description</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Description)
+    </div>
+     <div class="display-label">Type</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Type)
+    </div>
+
+    <div class="display-label">Ordinal</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Ordinal)
+    </div>
+
+    <div class="display-label">Data</div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Data)
+    </div>
+    
+</fieldset>
+</div>

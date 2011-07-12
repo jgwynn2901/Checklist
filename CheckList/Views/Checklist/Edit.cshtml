@@ -1,0 +1,41 @@
+﻿@model CheckListDataModel.CheckListItem
+
+@{
+    ViewBag.Title = @Model.Name;
+}
+
+<div data-role="header" id="hdrCategories">
+	<h1>@Model.Name</h1>
+</div>
+
+<div data-role="content" id="contentDetails" name="contentDetails">
+@using (Html.BeginForm()) {
+		<fieldset>	
+            <div id="descriptionPanel" data-role="fieldcontain" >
+				<div class="editor-label">
+					@Html.LabelFor(model => model.Description)
+				</div>	
+				<div class="ui-field-contain ui-body ui-br" >
+					@Html.EditorFor(model => model.Description)
+				</div>
+			</div>
+			<div id="typePanel" data-role="fieldcontain">
+				<div class="editor-label">
+					@Html.LabelFor(model => model.Data)
+				</div>	
+				<div class="ui-field-contain ui-body ui-br" >
+					@Html.TextAreaFor(model => model.Data)
+				</div>
+                <div>
+					@Html.HiddenFor(model => model.Name)
+					@Html.HiddenFor(model => model.Parent)
+					@Html.HiddenFor(model => model.Type)
+					@Html.HiddenFor(model => model.Ordinal)
+				</div>
+			</div>
+		</fieldset>
+		<div id="submitDiv" data-role="fieldcontain">    
+			<input type="submit" value="Update" data-inline="true"/>
+		</div>
+}
+</div>

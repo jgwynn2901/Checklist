@@ -1,37 +1,44 @@
 ﻿@model CheckListDataModel.CheckListItem
 
 @{
-	ViewBag.Title = @Model.Name;
+	ViewBag.Title = @Model.Parent;
 }
 
 <div data-role="header" id="hdrCategories">
 	<h1>@Model.Name</h1>
 </div>
 <div data-role="content" id="contentDetails" name="contentDetails">
-	<div data-role="content" id="detailsForm" name="detailsForm">
-		@using (Html.BeginForm())
-		{
-		<fieldset>				
-			 <div id="descriptionPanel" data-role="fieldcontain" >
-				<div class="editor-label">
-					@Html.LabelFor(model => model.Description)
-				</div>	
-				<div class="ui-field-contain ui-body ui-br" >
-					@Html.EditorFor(model => model.Description)
-				</div>
-			</div>
-			<div id="typePanel" data-role="fieldcontain">
-				<div class="editor-label">
-					@Html.LabelFor(model => model.Data)
-				</div>	
-				<div class="ui-field-contain ui-body ui-br" >
-					@Html.TextAreaFor(model => model.Data)
-				</div>
-			</div>
-		</fieldset>
-		<div id="submitDiv" data-role="fieldcontain">    
-			<input type="submit" value="Update" data-inline="true"/>
-		</div>
-		}
-	</div>
-</div>
+    <div id="namePanel" data-role="fieldcontain" >
+	    <div class="display-label">Name</div>
+        <div class="ui-field-contain ui-body ui-br">
+            @Html.DisplayFor(model => model.Name)
+        </div>
+    </div>
+    <div id="descriptionPanel" data-role="fieldcontain" >
+        <div class="editor-label">Description</div>
+        <div class="ui-field-contain ui-body ui-br">
+            @Html.DisplayFor(model => model.Description)
+        </div>
+    </div>
+    
+        <div id="typePanel" data-role="fieldcontain" >
+       <div class="editor-label">Type</div>
+        <div class="ui-field-contain ui-body ui-br">
+            @Html.DisplayFor(model => model.Type)
+        </div>
+    </div>
+ 
+    <div id="ordinalPanel" data-role="fieldcontain" >
+        <div class="editor-label">Ordinal</div>
+        <div class="ui-field-contain ui-body ui-br">
+            @Html.DisplayFor(model => model.Ordinal)
+        </div>
+    </div>
+ 
+   <div id="dataPanel" data-role="fieldcontain" >
+        <div class="editor-label">Data</div>
+        <div class="ui-field-contain ui-body ui-br">
+            @Html.DisplayFor(model => model.Data)
+        </div>
+    </div>
+ </div>

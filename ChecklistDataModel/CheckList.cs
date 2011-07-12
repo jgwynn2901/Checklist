@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System;
 using MongoDB.Bson.Serialization.Attributes;
+using System.ComponentModel.DataAnnotations;
 
 namespace CheckListDataModel
 {
@@ -12,9 +13,12 @@ namespace CheckListDataModel
     {
         private List<CheckListItem> _items = new List<CheckListItem>();
 
-        [BsonId]
+        [BsonId, Required]
         public string Name { get; set; }
         public string Description { get; set; }
+
+        [BsonIgnore]
+        public string Parent { get; set; }
 
         public List<CheckListItem> Items { get { return _items; } set { _items = value; } }
         

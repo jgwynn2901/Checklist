@@ -1,4 +1,5 @@
 ﻿using System.Web.Mvc;
+using System.Linq;
 using CheckList.Models;
 
 namespace CheckList.Controllers
@@ -11,16 +12,6 @@ namespace CheckList.Controllers
         public ActionResult Index()
         {
             return View(ChecklistRepository.Select());
-        }
-
-        //
-        // GET: /Checklist/Details/5
-
-        public ActionResult Details(string name, int? index )
-        {
-            if(index.HasValue)
-                return View(ChecklistRepository.SelectByName(name).Items[index??0]);
-            return RedirectToAction("Index");
         }
 
         public ActionResult Select(string name)
@@ -36,13 +27,7 @@ namespace CheckList.Controllers
             return View(new CheckListDataModel.CheckListItem());
         }
 
-        public ActionResult CreateItem(string id)
-        {
-            ViewBag.Item = !string.IsNullOrEmpty(id);
-            ViewBag.Parent = id;
-            return View("Create", new CheckListDataModel.CheckListItem());
-        }
-
+       
         //
         // POST: /Checklist/Create
 
@@ -51,13 +36,13 @@ namespace CheckList.Controllers
         {
             try
             {
-                if(string.IsNullOrEmpty(ViewBag.Parent))
+                if (string.IsNullOrEmpty(list.Parent))
                 {
                     ChecklistRepository.Insert(list);
                 }
                 else
                 {
-                    ChecklistRepository.Update(ViewBag.Parent, list);
+                    ChecklistRepository.Update(list.Parent, list);
                 }
                 return RedirectToAction("Index");
             }
@@ -67,46 +52,49 @@ namespace CheckList.Controllers
             }
         }
 
-        [HttpPost]
-        public ActionResult CreateItem(string id, CheckListDataModel.CheckListItem list)
-        {
-            try
-            {
-                // TODO: Add insert logic here
-                ChecklistRepository.Update(id, list);
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-        
         //
-        // GET: /Checklist/Edit/5
- 
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
+        // GET: /Checklist/Details/5
 
+        public ActionResult Edit(string id, int? index)
+        {
+            if (index.HasValue)
+            {
+                var parent = ChecklistRepository.SelectByName(id);
+                if (parent != null && parent.Items.Count > index)
+                {
+                    var item = parent.Items.Where(a => a.Ordinal == index).First();
+                    item.Parent = parent.Name;
+                    return View("Edit", item);
+                }
+            }
+            return RedirectToAction("Index");
+        }
         //
         // POST: /Checklist/Edit/5
 
         [HttpPost]
-        public ActionResult Details(string name, CheckListDataModel.CheckListItem item)
+        public ActionResult Edit(FormCollection collection)
         {
             try
             {
+                var item = new CheckListDataModel.CheckListItem
+                {
+                    Name = collection["Name"],
+                    Description = collection["Description"],
+                    Data = collection["Data"],
+                    Parent = collection["Parent"]
+                };
                 // TODO: Add update logic here
-                ChecklistRepository.Update(name, item);
-                return RedirectToAction("Index");
+                ChecklistRepository.Update(item.Parent, item);
+                return View("Select", ChecklistRepository.SelectByName(item.Parent));
             }
             catch
             {
                 return View();
             }
         }
+
+        
 
         //
         // GET: /Checklist/Delete/5
