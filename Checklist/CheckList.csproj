@@ -87,6 +87,7 @@
     <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
     <Content Include="Scripts\datajs-0.0.3.js" />
     <Content Include="Scripts\datajs-0.0.3.min.js" />
+    <Content Include="Scripts\speak.full.js" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

@@ -27,7 +27,6 @@ C:\src\checklist\CheckListUnitTests\bin\Debug\CheckListUnitTests.pdb
 C:\src\checklist\CheckListUnitTests\bin\Debug\CheckListDataModel.dll
 C:\src\checklist\CheckListUnitTests\bin\Debug\FnsUtility.dll
 C:\src\checklist\CheckListUnitTests\bin\Debug\nunit.framework.dll
-C:\src\checklist\CheckListUnitTests\bin\Debug\FnsInterfaces.dll
 C:\src\checklist\CheckListUnitTests\bin\Debug\FTP.dll
 C:\src\checklist\CheckListUnitTests\bin\Debug\FnsComposite.dll
 C:\src\checklist\CheckListUnitTests\bin\Debug\DbClassLibrary.dll
@@ -37,7 +36,6 @@ C:\src\checklist\CheckListUnitTests\bin\Debug\DbLinq.Oracle.dll
 C:\src\checklist\CheckListUnitTests\bin\Debug\CheckListDataModel.pdb
 C:\src\checklist\CheckListUnitTests\bin\Debug\FnsUtility.pdb
 C:\src\checklist\CheckListUnitTests\bin\Debug\nunit.framework.xml
-C:\src\checklist\CheckListUnitTests\bin\Debug\FnsInterfaces.pdb
 C:\src\checklist\CheckListUnitTests\bin\Debug\FnsComposite.pdb
 C:\src\checklist\CheckListUnitTests\bin\Debug\DbClassLibrary.pdb
 C:\src\checklist\CheckListUnitTests\bin\Debug\Newtonsoft.Json.pdb
