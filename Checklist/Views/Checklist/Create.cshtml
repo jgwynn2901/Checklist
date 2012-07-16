@@ -2,11 +2,10 @@
 @{
     ViewBag.Title = "Create";
 }
-<div data-role="header" id="hdrCreate" name="hdrCreate">
-    <h1>
-        New CheckList</h1>
+<div data-role="header">
+    <h1>New CheckList</h1>
 </div>
-<div data-role="content" id="formContent">
+<div data-role="content">
     @using (Html.BeginForm())
     {
         @Html.ValidationSummary(true)

@@ -4,11 +4,12 @@
     ViewBag.Title = @Model.Name;
 }
 
-<div data-role="header" id="hdrCategories">
-	<h1>@Model.Name</h1>
+<div data-role="header">
+    <a href="index.html" data-icon="delete">Cancel</a>
+	<h1>Edit @Model.Name</h1>
 </div>
 
-<div data-role="content" id="contentDetails" name="contentDetails">
+<div data-role="content" >
 @using (Html.BeginForm()) {
 		<fieldset>	
             <div id="descriptionPanel" data-role="fieldcontain" >

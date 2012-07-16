@@ -4,12 +4,12 @@
     ViewBag.Title = "CheckLists";
 }
 
-<div data-role="header" id="hdrCategories" data-nobackbtn="true">
+<div data-role="header" data-add-back-btn="true">
 <h1>@ViewBag.Title</h1>
-<a id="buttonNewCategory" data-icon="plus" class="ui-btn-right" href="/Checklist/Create" data-role="button" data-inline="true">Checklist</a>
+<a data-icon="plus" class="ui-btn-right" href="/Checklist/Create" data-role="button" data-inline="true">Checklist</a>
 </div>
-<div data-role="content" id="indexContent">
-<ul data-role="listview" data-inset="true" >
+<div data-role="content">
+<ul data-role="listview">
     <li data-role="list-divider">Index</li>
     @foreach (var item in Model) {
     <li>@Html.ActionLink(@item.Name, "Select", new { name = item.Name })</li>  

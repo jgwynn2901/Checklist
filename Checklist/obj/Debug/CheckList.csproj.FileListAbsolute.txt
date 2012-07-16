@@ -12,3 +12,16 @@ C:\src\checklist\CheckList\bin\CheckListDataModel.pdb
 C:\src\checklist\CheckList\obj\Debug\ResolveAssemblyReference.cache
 C:\src\checklist\CheckList\obj\Debug\CheckList.dll
 C:\src\checklist\CheckList\obj\Debug\CheckList.pdb
+C:\Users\John\Documents\GitHub\Checklist\CheckList\obj\Debug\CheckList.csprojResolveAssemblyReference.cache
+C:\Users\John\Documents\GitHub\Checklist\CheckList\bin\CheckList.dll
+C:\Users\John\Documents\GitHub\Checklist\CheckList\bin\CheckList.pdb
+C:\Users\John\Documents\GitHub\Checklist\CheckList\bin\CheckListDataModel.dll
+C:\Users\John\Documents\GitHub\Checklist\CheckList\bin\MongoDB.Bson.dll
+C:\Users\John\Documents\GitHub\Checklist\CheckList\bin\MongoDB.Driver.dll
+C:\Users\John\Documents\GitHub\Checklist\CheckList\bin\CheckListDataModel.pdb
+C:\Users\John\Documents\GitHub\Checklist\CheckList\bin\MongoDB.Bson.pdb
+C:\Users\John\Documents\GitHub\Checklist\CheckList\bin\MongoDB.Bson.xml
+C:\Users\John\Documents\GitHub\Checklist\CheckList\bin\MongoDB.Driver.pdb
+C:\Users\John\Documents\GitHub\Checklist\CheckList\bin\MongoDB.Driver.xml
+C:\Users\John\Documents\GitHub\Checklist\CheckList\obj\Debug\CheckList.dll
+C:\Users\John\Documents\GitHub\Checklist\CheckList\obj\Debug\CheckList.pdb

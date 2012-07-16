@@ -3,12 +3,12 @@
 @{
     ViewBag.Title = Model.Name;
 }
-<div data-role="header" id="hdrCategories">
+<div data-role="header" data-add-back-btn="true">
 <h1>@Model.Name</h1>
-<a id="buttonNewCategory" data-icon="plus" class="ui-btn-right" href="/Checklist/CreateItem/@Model.Name" data-role="button" data-inline="true">Task</a>
+<a data-icon="plus" class="ui-btn-right" href="/Checklist/CreateItem/@Model.Name" data-role="button" data-inline="true">Task</a>
 </div>
-<div data-role="content" id="indexContent">
-<ul data-role="listview" data-inset="true">
+<div data-role="content">
+<ul data-role="listview">
     <li data-role="list-divider">Tasks</li>
     @for (int i = 0; i < Model.Items.Count; i++ )  {
        <li> 
