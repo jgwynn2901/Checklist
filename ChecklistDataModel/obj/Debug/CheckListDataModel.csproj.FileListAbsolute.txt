@@ -21,3 +21,15 @@ C:\Users\John\Documents\GitHub\Checklist\CheckListDataModel\bin\Debug\MongoDB.Bs
 C:\Users\John\Documents\GitHub\Checklist\CheckListDataModel\bin\Debug\MongoDB.Bson.xml
 C:\Users\John\Documents\GitHub\Checklist\CheckListDataModel\bin\Debug\MongoDB.Driver.pdb
 C:\Users\John\Documents\GitHub\Checklist\CheckListDataModel\bin\Debug\MongoDB.Driver.xml
+C:\Users\gwynnj\Documents\GitHub\Checklist\CheckListDataModel\bin\Debug\CheckListDataModel.dll.config
+C:\Users\gwynnj\Documents\GitHub\Checklist\CheckListDataModel\bin\Debug\CheckListDataModel.dll
+C:\Users\gwynnj\Documents\GitHub\Checklist\CheckListDataModel\bin\Debug\CheckListDataModel.pdb
+C:\Users\gwynnj\Documents\GitHub\Checklist\CheckListDataModel\obj\Debug\CheckListDataModel.csprojResolveAssemblyReference.cache
+C:\Users\gwynnj\Documents\GitHub\Checklist\CheckListDataModel\obj\Debug\CheckListDataModel.dll
+C:\Users\gwynnj\Documents\GitHub\Checklist\CheckListDataModel\obj\Debug\CheckListDataModel.pdb
+C:\Users\gwynnj\Documents\GitHub\Checklist\CheckListDataModel\bin\Debug\MongoDB.Bson.dll
+C:\Users\gwynnj\Documents\GitHub\Checklist\CheckListDataModel\bin\Debug\MongoDB.Driver.dll
+C:\Users\gwynnj\Documents\GitHub\Checklist\CheckListDataModel\bin\Debug\MongoDB.Bson.pdb
+C:\Users\gwynnj\Documents\GitHub\Checklist\CheckListDataModel\bin\Debug\MongoDB.Bson.xml
+C:\Users\gwynnj\Documents\GitHub\Checklist\CheckListDataModel\bin\Debug\MongoDB.Driver.pdb
+C:\Users\gwynnj\Documents\GitHub\Checklist\CheckListDataModel\bin\Debug\MongoDB.Driver.xml
